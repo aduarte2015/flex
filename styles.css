@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    margin: 0;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.loja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.img-sobre {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.texto-loja {
+    width: 45%;
+    text-align: justify;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.produto {
+    width: calc(25% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.img-produto {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .produto {
+        width: calc(50% - 20px);
+    }
+    
+    .loja {
+        flex-direction: column;
+    }
+
+    .img-sobre {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto-loja {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .produto {
+        width: calc(100% - 20px);
+    }
+    
+    .loja {
+        flex-direction: column;
+    }
+
+    .img-sobre {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto-loja {
+        width: 90%;
+        margin: 20px;
+    }
+}
